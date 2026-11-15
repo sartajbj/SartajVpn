@@ -16,8 +16,8 @@ public class MainActivity extends Activity {
     private final int white = Color.WHITE, muted = Color.rgb(151,170,193), blue = Color.rgb(63,169,245);
     private TextView selected;
 
-    @Override public void onCreate(Bundle state) {
-        super.onCreate(state);
+    @Override public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         getWindow().setStatusBarColor(Color.rgb(7,17,31));
         getWindow().setNavigationBarColor(Color.rgb(7,17,31));
         LinearLayout page = new LinearLayout(this);
@@ -54,7 +54,7 @@ public class MainActivity extends Activity {
             .setMessage("This preview app does not yet create a VPN tunnel. Real encrypted access requires deployed VPN servers and WireGuard client configuration.")
             .setPositiveButton("OK",null).show());
 
-        TextView state=text("●  READY TO CONNECT",12,Color.rgb(255,190,90),true);
+        TextView statusLabel=text("●  READY TO CONNECT",12,Color.rgb(255,190,90),true);
         statusLabel.setGravity(Gravity.CENTER);
         LinearLayout.LayoutParams st=lp(-1,-2); st.topMargin=dp(18); page.addView(statusLabel,st);
 
