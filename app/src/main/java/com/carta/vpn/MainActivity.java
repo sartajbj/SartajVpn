@@ -11,7 +11,7 @@ import android.widget.*;
 
 public class MainActivity extends Activity {
     private final String[] countries = {"🇺🇸  United States", "🇨🇦  Canada", "🇮🇹  Italy",
-        "🇫🇷  France", "🇬🇧  United Kingdom", "🇩🇪  Germany", "🇸🇬  Singapore"};
+        "🇫🇷  France", "🇬🇧  United Kingdom", "🇩🇪  Germany", "🇸🇬  Singapore", "🇲🇾  Malaysia"};
     private int current = 0;
     private final int white = Color.WHITE, muted = Color.rgb(151,170,193), blue = Color.rgb(63,169,245);
     private TextView selected;
@@ -62,7 +62,7 @@ public class MainActivity extends Activity {
         premium.setGravity(Gravity.CENTER); premium.setPadding(dp(12),dp(16),dp(12),dp(16));
         premium.setBackground(round(Color.rgb(13,29,48),14,Color.rgb(37,86,126)));
         LinearLayout.LayoutParams pp=lp(-1,-2); pp.topMargin=dp(24); page.addView(premium,pp);
-        TextView list=text("🇺🇸 USA   🇨🇦 Canada   🇮🇹 Italy\n🇫🇷 France   🇬🇧 UK   🇩🇪 Germany   🇸🇬 Singapore",13,white,false);
+        TextView list=text("🇺🇸 USA   🇨🇦 Canada   🇮🇹 Italy\n🇫🇷 France   🇬🇧 UK   🇩🇪 Germany   🇸🇬 Singapore   🇲🇾 Malaysia",13,white,false);
         list.setGravity(Gravity.CENTER); list.setLineSpacing(dp(8),1f);
         LinearLayout.LayoutParams l=lp(-1,-2); l.topMargin=dp(17); page.addView(list,l);
 
