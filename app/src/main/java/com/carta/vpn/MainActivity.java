@@ -55,8 +55,8 @@ public class MainActivity extends Activity {
             .setPositiveButton("OK",null).show());
 
         TextView state=text("●  READY TO CONNECT",12,Color.rgb(255,190,90),true);
-        state.setGravity(Gravity.CENTER);
-        LinearLayout.LayoutParams st=lp(-1,-2); st.topMargin=dp(18); page.addView(state,st);
+        statusLabel.setGravity(Gravity.CENTER);
+        LinearLayout.LayoutParams st=lp(-1,-2); st.topMargin=dp(18); page.addView(statusLabel,st);
 
         TextView premium=text("✦  PREMIUM EXPERIENCE",14,blue,true);
         premium.setGravity(Gravity.CENTER); premium.setPadding(dp(12),dp(16),dp(12),dp(16));
