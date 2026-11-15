@@ -9,3 +9,6 @@ GitHub Actions automatically builds a debug APK on pushes to `main`. You can als
 
 ## Before calling it a real VPN
 Deploy WireGuard servers in each advertised country, integrate the official WireGuard Android tunnel library and Android VPN permission flow, then add secure per-user key provisioning, DNS handling, IPv4/IPv6 routing, kill-switch testing, reconnect/failover, and subscription handling. No server is bundled in this APK.
+
+
+Build workflow: Android SDK setup installs platform-tools without the obsolete `tools` package.
